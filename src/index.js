@@ -29,8 +29,10 @@ function populateBreedSelect(breeds) {
 function displayCatInfo(cat) {
   catImg.src = cat.url || 'assets/placeholder.png'; // Imagine default dacă lipsește
   catBreed.textContent = cat.breeds[0]?.name || 'Unknown breed';
-  catDescription.textContent = cat.breeds[0]?.description || 'No description available.';
-  catTemperament.textContent = cat.breeds[0]?.temperament || 'Unknown temperament';
+  catDescription.textContent =
+    cat.breeds[0]?.description || 'No description available.';
+  catTemperament.textContent =
+    cat.breeds[0]?.temperament || 'Unknown temperament';
   catInfo.classList.remove('hidden');
 }
 
